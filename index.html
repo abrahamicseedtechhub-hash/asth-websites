@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASTH - Abrahamic Seed Tech Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="header-top">
+<img src="images/logo.png" alt="ASTH Logo" class="logo">
+<div>
+<h1>ASTH</h1>
+<p>Abrahamic Seed Tech Hub</p>
+</div>
+</div>
+<nav id="nav">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#gallery">Gallery</a>
+<a href="#events">Events</a>
+<a href="#contact">Contact</a>
+</nav>
+<button id="menuBtn">☰ Menu</button>
+</header>
+
+<section id="home" class="hero">
+<h2>Learn Tech. Build Future. Shine Bright.</h2>
+<p>Robotics, Coding, AI, Media & Events for Kids, Teens and Adults in Lagos</p>
+<img src="images/pic1.jpg" alt="ASTH Training" class="hero-img">
+<br><br>
+<a href="#courses" class="btn">Explore Courses</a>
+<a href="#contact" class="btn btn2">Enroll Now</a>
+</section>
+
+<section id="about" class="section">
+<h2>About ASTH</h2>
+<p>ASTH is a tech hub in Lagos where young minds learn Robotics, Coding, AI, Computer Skills and Media Production. We also cover Events with Photography and Videography.</p>
+<img src="images/tosin.png" alt="Mr Tosin" class="founder-img">
+<p><b>Founder - Mr. Tosin</b><br>Passionate about raising the next generation of tech creators in Nigeria.</p>
+</section>
+
+<section id="courses" class="section">
+<h2>Our Courses</h2>
+<div class="grid">
+<div class="card"><img src="images/pic2.jpg"><h3>Robotics</h3><p>Build and program robots. Hands-on learning for kids and teens.</p><button class="btn small" onclick="enroll('Robotics')">Enroll</button></div>
+<div class="card"><img src="images/pic3.jpg"><h3>Coding / Computer</h3><p>Learn Scratch, Python, Computer Basics and Microsoft Office.</p><button class="btn small" onclick="enroll('Coding')">Enroll</button></div>
+<div class="card"><img src="images/pic4.jpg"><h3>AI & Creativity</h3><p>Learn Artificial Intelligence, Design and Creative Tech.</p><button class="btn small" onclick="enroll('AI Class')">Enroll</button></div>
+<div class="card"><img src="images/pic5.jpg"><h3>Media & Events</h3><p>Photography, Videography, Event Coverage for Weddings & Birthdays.</p><button class="btn small" onclick="enroll('Event Coverage')">Enroll</button></div>
+</div>
+</section>
+
+<section id="gallery" class="section">
+<h2>Our Gallery</h2>
+<p>Real moments from ASTH trainings and events.</p>
+<div class="grid gallery">
+<img src="images/pic6.jpg">
+<img src="images/pic7.jpg">
+<img src="images/pic8.jpg">
+<img src="images/pic9.jpg">
+<img src="images/pic10.jpg">
+<img src="images/pic11.jpg">
+<img src="images/pic12.jpg">
+<img src="images/pic1.jpg">
+</div>
+</section>
+
+<section id="events" class="section">
+<h2>Events & Media Coverage</h2>
+<p>We cover Weddings, Birthdays, Corporate Events, Church Programs with Professional Photography & Video.</p>
+<a href="#contact" class="btn">Book Event Coverage</a>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact Us / Enroll</h2>
+<p><b>Location:</b> Lagos, Nigeria</p>
+<p><b>WhatsApp:</b> +234 810 000 0000 - Send me your real number, I will update it</p>
+<p><b>Instagram:</b> @abrahamicseedtechhub</p>
+<form id="enrollForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="text" id="child" placeholder="Child Name / Age">
+<select id="course"><option>Robotics</option><option>Coding</option><option>AI Class</option><option>Event Coverage</option></select>
+<button type="submit">Send Enquiry</button>
+<p id="formMsg"></p>
+</form>
+</section>
+
+<footer>
+<p>© 2026 ASTH - Abrahamic Seed Tech Hub. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

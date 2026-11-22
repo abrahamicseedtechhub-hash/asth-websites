@@ -1,0 +1,37 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background:#f8f9ff; color:#222; line-height:1.6; }
+header { background:#0a1a5c; color:white; padding:15px; position:sticky; top:0; z-index:100; }
+.header-top { display:flex; align-items:center; gap:12px; }
+.logo { width:120px; height:auto; object-fit:contain; background:white; border-radius:12px; padding:8px; }
+header h1 { font-size:28px; letter-spacing:2px; }
+header p { font-size:13px; opacity:0.9; }
+nav { display:flex; gap:15px; flex-wrap:wrap; margin-top:10px; }
+nav a { color:white; text-decoration:none; font-weight:bold; font-size:14px; }
+nav a:hover { text-decoration:underline; }
+#menuBtn { display:none; margin-top:10px; padding:8px 15px; border:none; border-radius:8px; cursor:pointer; }
+.hero { text-align:center; padding:40px 15px; background:linear-gradient(135deg, #0a1a5c, #ff6b00); color:white; }
+.hero h2 { font-size:32px; margin-bottom:10px; }
+.hero-img { width:100%; max-width:800px; border-radius:15px; margin-top:20px; border:4px solid white; }
+.btn { display:inline-block; background:#ff6b00; color:white; padding:12px 22px; border-radius:25px; text-decoration:none; font-weight:bold; margin:5px; border:none; cursor:pointer; }
+.btn2 { background:white; color:#0a1a5c; }
+.btn.small { padding:8px 15px; font-size:14px; }
+.section { padding:35px 15px; max-width:1000px; margin:auto; text-align:center; }
+.section h2 { color:#0a1a5c; margin-bottom:15px; font-size:26px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:15px; margin-top:20px; }
+.card { background:white; padding:15px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+.card img { width:100%; height:160px; object-fit:cover; border-radius:12px; }
+.card h3 { margin:10px 0 5px; color:#0a1a5c; }
+.gallery img { width:100%; height:180px; object-fit:cover; border-radius:12px; }
+.founder-img { width:200px; height:200px; object-fit:cover; border-radius:50%; margin:15px 0; border:4px solid #ff6b00; }
+form { max-width:450px; margin:20px auto; display:flex; flex-direction:column; gap:10px; }
+input, select { padding:12px; border:1px solid #ccc; border-radius:10px; font-size:15px; }
+form button { background:#0a1a5c; color:white; padding:12px; border:none; border-radius:10px; font-weight:bold; cursor:pointer; }
+footer { background:#0a1a5c; color:white; text-align:center; padding:20px; }
+@media (max-width:600px) {
+  nav { display:none; flex-direction:column; background:#0a1a5c; padding:10px; }
+  nav.show { display:flex; }
+  #menuBtn { display:block; }
+  .hero h2 { font-size:24px; }
+  .header-top h1 { font-size:22px; }
+  .logo { width:90px; }
+}
